@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+              <!-- Bootstrap CSS -->
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+              <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <title>Game Quiz</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">KwikQuiz</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>    -->
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Scores: <span id="score_counter">0</span></a>
+                    </li>
+                </ul>
+            </nav>        
+        </header>
+        <section>
+            <div class="container">
+                <div class="row" id="row_0">
+                    <div class="col-md-12">
+                        <div class="intro">
+                            <h1>Welcome To KwikQuiz </h1>
+                            <p> A quick step to your IQ test</p>
+                        </div>
+                        <div class="intro">
+                           <button type="button" class="btn btn-primary" onclick="startQuiz()">Start Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br />
+        <!-- <section id="questions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="all-questions">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div id="row">
+                    <div class="col-md-12 text-right" id="next-btn-div"></div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="questions">
+            <div class="container">
+                <div class="row" id="row_1" style="display: none;">
+                    <div class="col-md-12">
+                        <ul class="list-group" id="question_1">
+                            <li class="list-group-item active">Who is president of United State?</li>
+                        </ul>
+                        <ul class="list-group" id="question_options_1">
+                            <li class="list-group-item"><input type="radio" id="a" name="option_answer_1" value="Benny"> <label for="a">Benny</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="b" name="option_answer_1" value="James"> <label for="b">James</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="c" name="option_answer_1" value="Volin"><label for="c">Volin</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="d" name="option_answer_1" value="Trump"><label for="d">Trump</label> <div class="check"></div></li>
+                        </ul>
+
+                        <br />
+
+                        <button class="btn btn-primary" onclick="nextQuestion(1,2)">Next</button>
+                    </div>
+
+                </div>
+
+                <div class="row" id="row_2" style="display: none;">
+                    <div class="col-md-12">
+                        <ul class="list-group" id="question_2">
+                            <li class="list-group-item active">Who is the president of Nigeria?</li>
+                        </ul>
+                        <ul class="list-group" id="question_options_2">
+                            <li class="list-group-item"><input type="radio" id="e" name="option_answer_2" value="Buhari"> <label for="e">Buhari</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="f" name="option_answer_2" value="Obasanjo"> <label for="f">Obasanjo</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="g" name="option_answer_2" value="Volin"> <label for="g">Volin</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="h" name="option_answer_2" value="Trump"> <label for="h">Trump</label> <div class="check"></div></li>
+                        </ul>
+
+                         <br />
+
+                        <button class="btn btn-primary" onclick="nextQuestion(2,3)">Next</button>
+
+                    </div>
+                </div>
+
+                <div class="row" id="row_3" style="display: none;">
+                    <div class="col-md-12">
+                        <ul class="list-group" id="question_3">
+                            <li class="list-group-item active">What is the full meaning of COVID-19?</li>
+                        </ul>
+                        <ul class="list-group" id="question_options_3">
+                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="Benny"> Benny</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="James"> James</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="Volin"> Volin</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="Trump"> Trump</li>
+                        </ul>
+
+                         <br />
+
+                        <button class="btn btn-primary" onclick="nextQuestion(3,4)">Next</button>
+
+                    </div>
+                </div>
+
+                <div class="row" id="row_4" style="display: none;">
+                    <div class="col-md-12">
+                        <ul class="list-group" id="question_4">
+                            <li class="list-group-item active">What is the full meaning of HTML?</li>
+                        </ul>
+                        <ul class="list-group" id="question_options_4">
+                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="Benny"> Benny</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="James"> James</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="Volin"> Volin</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="Trump"> Trump</li>
+                        </ul>
+
+                         <br />
+
+                        <button class="btn btn-primary" onclick="nextQuestion(4,5)">Next</button>
+
+                    </div>
+                </div>
+
+
+                <div class="row" id="row_5" style="display: none;">
+                    <div class="col-md-12">
+                        <ul class="list-group" id="question_5">
+                            <li class="list-group-item active">Who is the capital of Lagos?</li>
+                        </ul>
+                        <ul class="list-group" id="question_options_5">
+                            <li class="list-group-item"><input type="radio" name="option_answer_5" value="Benny"> Benny</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_5" value="James"> James</li>
+                            <li class="list-group-item"><input type="radio" 5ame="option_answer_5" value="Volin"> Volin</li>
+                            <li class="list-group-item"><input type="radio" name="option_answer_5" value="Trump"> Trump</li>
+                        </ul>
+
+                         <br />
+
+                        <button class="btn btn-primary" onclick="nextQuestion(5,6)">Next</button>
+
+                    </div>
+                </div>
+
+                <div id="row">
+                    <div class="col-md-12 text-right" id="next-btn-div"></div>
+                </div>
+            </div>
+
+        </section>
+        
+
+        <footer>
+            <div id="record">Yo
+            <p class="text-center">Copy right protected &copy; 2020</p>   
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+
+            var correct_answer = 0; 
+
+            function startQuiz() {
+                nextQuestion(0,1);
+            }
+
+            function nextQuestion(prev, next) {
+                // body...
+                $(`#row_${next}`).show();
+                $(`#row_${prev}`).hide();
+                
+                if (prev == 1) {
+                    markQuestion1();
+                    
+
+
+
+                }
+
+                if (prev == 2) {
+                    markQuestion2();
+
+                }
+
+                if (prev == 3) {
+                    markQuestion3()
+                    ;
+
+                }
+
+                if (prev == 4) {
+                    markQuestion4();
+
+                }
+
+                if (prev == 5) {
+                    markQuestion5();
+
+                }
+
+                if (prev == 6) {
+                    show_counter;
+
+                }
+            }
+
+            //var correct_answer=0
+
+            function markQuestion1(){
+                
+                // ans
+                var answer_1 = "Trump";
+                var user_answer_1 = $("input[name=option_answer_1]:checked").val();
+
+                console.log(user_answer_1);
+
+                if (answer_1 == user_answer_1) {
+                    correct_answer++
+                    $("#score_counter").html(correct_answer);
+                   console.log(correct_answer);
+                
+                }else if (answer_1 != user_answer_1) {
+                   console.log("wrong");
+                }
+            }
+
+            function markQuestion2(){
+
+                var answer_2 = "Buhari";
+                var user_answer_2 = $("input[name=option_answer_2]:checked").val();
+
+                console.log(user_answer_2);
+
+                if (answer_2 == user_answer_2) {
+
+
+                    correct_answer++
+                    $("#score_counter").html(correct_answer);
+                   console.log(correct_answer);
+                
+                }else if (answer_2 != user_answer_2) {
+                    console.log("wrong");
+
+            
+                }
+            };
+
+            function markQuestion3(){
+
+                var answer_3 = "Volin";
+                var user_answer_3 = $("input[name=option_answer_3]:checked").val();
+                console.log(user_answer_3);
+
+                if (answer_3 == user_answer_3) {
+                    correct_answer.css('color', 'green')
+                    correct_answer++
+                    $("#score_counter").html(correct_answer);
+                   console.log(correct_answer);
+                
+                }else if (answer_3 != user_answer_3) {
+                    console.log("wrong");
+            
+                }
+            };
+
+            function markQuestion4(){
+
+                var answer_4 = "Benny";
+                var user_answer_4 = $("input[name=option_answer_4]:checked").val();
+
+                console.log(user_answer_4);
+
+                if (answer_4 == user_answer_4) {    
+                    correct_answer++
+                    $("#score_counter").html(correct_answer);
+
+                   console.log(correct_answer);
+                
+                }else if (answer_4 != user_answer_4) {
+
+                    console.log("wrong");
+            
+                }
+            };
+
+            
+            
+            function markQuestion5(){
+
+                var answer_5 = "James";
+                var user_answer_5 = $("input[name=option_answer_5]:checked").val();
+                console.log(user_answer_5);
+
+                if (answer_5 == user_answer_5) {
+                    correct_answer++
+                    $("#score_counter").html(correct_answer);
+                   console.log(correct_answer);
+                
+                }else if (answer_5 != user_answer_5) {
+                    console.log("wrong");
+                    console.log(correct_answer--);
+            
+                }
+            }
+
+            function show_counter(){
+
+                var score= `${correct_answer}`;
+                console.log(score);
+
+            }
+            
+
+
+        </script>
+        <!-- <script src="js/script.js"></script> -->
+    </body>
+</html>
