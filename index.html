@@ -31,7 +31,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Scores: <span id="score_counter">0</span></a>
+                        <a class="nav-link" href="#">Scores: <span id="score_counter">0</span>/5</a>
                     </li>
                 </ul>
             </nav>        
@@ -76,11 +76,11 @@
                         <ul class="list-group" id="question_1">
                             <li class="list-group-item active">Who is president of United State?</li>
                         </ul>
-                        <ul class="list-group" id="question_options_1">
-                            <li class="list-group-item"><input type="radio" id="a" name="option_answer_1" value="Benny"> <label for="a">Benny</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="b" name="option_answer_1" value="James"> <label for="b">James</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="c" name="option_answer_1" value="Volin"><label for="c">Volin</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="d" name="option_answer_1" value="Trump"><label for="d">Trump</label> <div class="check"></div></li>
+                        <ul class="list-group" id="question_options_1" >
+                            <li class="list-group-item"><input type="radio" id="a" name="option_answer_1" value="Benny" onclick="validateSelectedOption(this)"> <label for="a">Benny</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="b" name="option_answer_1" value="James" onclick="validateSelectedOption(this)"> <label for="b">James</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="c" name="option_answer_1" value="Volin" onclick="validateSelectedOption(this)"><label for="c">Volin</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="d" name="option_answer_1" value="Trump" onclick="validateSelectedOption(this)"><label for="d">Trump</label> <div class="check"></div></li>
                         </ul>
 
                         <br />
@@ -96,10 +96,10 @@
                             <li class="list-group-item active">Who is the president of Nigeria?</li>
                         </ul>
                         <ul class="list-group" id="question_options_2">
-                            <li class="list-group-item"><input type="radio" id="e" name="option_answer_2" value="Buhari"> <label for="e">Buhari</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="f" name="option_answer_2" value="Obasanjo"> <label for="f">Obasanjo</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="g" name="option_answer_2" value="Volin"> <label for="g">Volin</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="h" name="option_answer_2" value="Trump"> <label for="h">Trump</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="e" name="option_answer_2" value="Buhari" onclick="validateSelectedOption2(this)"> <label for="e">Buhari</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="f" name="option_answer_2" value="Obasanjo" onclick="validateSelectedOption2(this)"> <label for="f">Obasanjo</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="g" name="option_answer_2" value="Volin" onclick="validateSelectedOption2(this)"> <label for="g">Volin</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="h" name="option_answer_2" value="Trump" onclick="validateSelectedOption2(this)"> <label for="h">Trump</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -115,10 +115,10 @@
                             <li class="list-group-item active">What is the full meaning of COVID-19?</li>
                         </ul>
                         <ul class="list-group" id="question_options_3">
-                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="Benny"> Benny</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="James"> James</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="Volin"> Volin</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_3" value="Trump"> Trump</li>
+                            <li class="list-group-item"><input type="radio" id="i" name="option_answer_3" value="Benny" onclick="validateSelectedOption3(this)"> <label for="i">Benny</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="j" name="option_answer_3" value="James" onclick="validateSelectedOption3(this)">  <label for="j">James</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="k" name="option_answer_3" value="Volin" onclick="validateSelectedOption3(this)"> <label for="k">Volin</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="l" name="option_answer_3" value="Trump" onclick="validateSelectedOption3(this)"> <label for="l">Trump</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -134,10 +134,10 @@
                             <li class="list-group-item active">What is the full meaning of HTML?</li>
                         </ul>
                         <ul class="list-group" id="question_options_4">
-                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="Benny"> Benny</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="James"> James</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="Volin"> Volin</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_4" value="Trump"> Trump</li>
+                            <li class="list-group-item"><input type="radio" id="m" name="option_answer_4" value="Benny" onclick="validateSelectedOption4(this)"> <label for="m">Benny</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="n" name="option_answer_4" value="James" onclick="validateSelectedOption4(this)"> <label for="n">James</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="o" name="option_answer_4" value="Volin" onclick="validateSelectedOption4(this)"> <label for="o">Volin</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="p" name="option_answer_4" value="Trump" onclick="validateSelectedOption4(this)"> <label for="p">Trump</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -154,10 +154,10 @@
                             <li class="list-group-item active">Who is the capital of Lagos?</li>
                         </ul>
                         <ul class="list-group" id="question_options_5">
-                            <li class="list-group-item"><input type="radio" name="option_answer_5" value="Benny"> Benny</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_5" value="James"> James</li>
-                            <li class="list-group-item"><input type="radio" 5ame="option_answer_5" value="Volin"> Volin</li>
-                            <li class="list-group-item"><input type="radio" name="option_answer_5" value="Trump"> Trump</li>
+                            <li class="list-group-item"><input type="radio" id="q" name="option_answer_5" value="Benny" onclick="validateSelectedOption5(this)"> <label for="q">Benny</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="r" name="option_answer_5" value="James" onclick="validateSelectedOption5(this)"> <label for="r">James</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="s" name="option_answer_5" value="Volin" onclick="validateSelectedOption5(this)"><label for="s">Volin</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="t" name="option_answer_5" value="Trump" onclick="validateSelectedOption5(this)"> <label for="t">Trump</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -166,9 +166,14 @@
 
                     </div>
                 </div>
+            </div>
 
-                <div id="row">
-                    <div class="col-md-12 text-right" id="next-btn-div"></div>
+            <div class="row" id="row_6" style="display: none;">
+                    <div class="col-md-12 text-center" >
+                        <h3>Congratulations <br /> You've come to the end of the quiz</h3>
+                        <p>You scored: <span id="final_score_counter">0</span>/5</p>
+                        <div style="height: 200px;"></div>
+                    </div>
                 </div>
             </div>
 
@@ -176,7 +181,7 @@
         
 
         <footer>
-            <div id="record">Yo
+            <div id="record">
             <p class="text-center">Copy right protected &copy; 2020</p>   
         </footer>
         <!-- Optional JavaScript -->
@@ -227,7 +232,7 @@
                 }
 
                 if (prev == 6) {
-                    show_counter;
+                
 
                 }
             }
@@ -260,8 +265,6 @@
                 console.log(user_answer_2);
 
                 if (answer_2 == user_answer_2) {
-
-
                     correct_answer++
                     $("#score_counter").html(correct_answer);
                    console.log(correct_answer);
@@ -271,7 +274,7 @@
 
             
                 }
-            };
+            }
 
             function markQuestion3(){
 
@@ -280,7 +283,6 @@
                 console.log(user_answer_3);
 
                 if (answer_3 == user_answer_3) {
-                    correct_answer.css('color', 'green')
                     correct_answer++
                     $("#score_counter").html(correct_answer);
                    console.log(correct_answer);
@@ -289,7 +291,7 @@
                     console.log("wrong");
             
                 }
-            };
+            }
 
             function markQuestion4(){
 
@@ -309,10 +311,8 @@
                     console.log("wrong");
             
                 }
-            };
-
-            
-            
+            }
+     
             function markQuestion5(){
 
                 var answer_5 = "James";
@@ -326,19 +326,77 @@
                 
                 }else if (answer_5 != user_answer_5) {
                     console.log("wrong");
-                    console.log(correct_answer--);
             
+                }
+
+                $("#final_score_counter").html(correct_answer);
+            }
+
+            function validateSelectedOption(element){
+
+                // console.log(element.value);
+                $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
+                $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
+
+                if(element.value == 'Trump'){
+                    $(`#${element.id}`).parent().addClass('correct-answer');
+                }else if(element.value != 'Trump'){
+                    $(`#${element.id}`).parent().addClass('wrong-answer');
                 }
             }
 
-            function show_counter(){
 
-                var score= `${correct_answer}`;
-                console.log(score);
+            function validateSelectedOption2(element){
 
+                // console.log(element.value);
+                $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
+                $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
+
+                if(element.value == 'Buhari'){
+                    $(`#${element.id}`).parent().addClass('correct-answer');
+                }else if(element.value != 'Buhari'){
+                    $(`#${element.id}`).parent().addClass('wrong-answer');
+                }
             }
             
+            function validateSelectedOption3(element){
 
+                // console.log(element.value);
+                $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
+                $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
+
+                if(element.value == 'Volin'){
+                    $(`#${element.id}`).parent().addClass('correct-answer');
+                }else if(element.value != 'Volin'){
+                    $(`#${element.id}`).parent().addClass('wrong-answer');
+                }
+            }
+
+            function validateSelectedOption4(element){
+
+                // console.log(element.value);
+                $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
+                $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
+
+                if(element.value == 'Benny'){
+                    $(`#${element.id}`).parent().addClass('correct-answer');
+                }else if(element.value != 'Benny'){
+                    $(`#${element.id}`).parent().addClass('wrong-answer');
+                }
+            }
+
+            function validateSelectedOption5(element){
+
+                // console.log(element.value);
+                $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
+                $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
+
+                if(element.value == 'James'){
+                    $(`#${element.id}`).parent().addClass('correct-answer');
+                }else if(element.value != 'James'){
+                    $(`#${element.id}`).parent().addClass('wrong-answer');
+                }
+            }
 
         </script>
         <!-- <script src="js/script.js"></script> -->
