@@ -71,9 +71,10 @@
 
         <section id="questions" >
             <div class="container align-content-center">
+                <div>  <a class="nav-link" href="#">Scores: <span id="score_counter">0</span>/5</a> </div>
                 <div class="row" id="row_1" style="display: none;">
                     <div class="col-md-12">
-                            <p>Scores: <span id="scorecounter">0</span>/5<p>
+                            
                         <ul class="list-group" id="question_1">
                             <li class="list-group-item active">Question 1: What tag contains the Javascipt code?</li>
                         </ul>
@@ -93,15 +94,15 @@
 
                 <div class="row" id="row_2" style="display: none;">
                     <div class="col-md-12">
-                        Scores: <span id="score_counter">0</span>/5
+                        <!-- <p>Scores: <span id="score_counter">0</span>/5</p> -->
                         <ul class="list-group" id="question_2">
                             <li class="list-group-item active">Question 2: Where is the script tag typically placed ?</li>
                         </ul>
                         <ul class="list-group" id="question_options_2">
-                            <li class="list-group-item"><input type="radio" id="e" name="option_answer_2" value="HTMLtag" onclick="validateSelectedOption2(this)"> <label for="e">Before the HTML tag or Body tag</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="f" name="option_answer_2" value="HEADtag" onclick="validateSelectedOption2(this)"> <label for="f">Inside the Head tag or Body tag</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="g" name="option_answer_2" value="closingHtml" onclick="validateSelectedOption2(this)"> <label for="g">After the closing HTML tag or Body tag</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="h" name="option_answer_2" value="Titletag" onclick="validateSelectedOption2(this)"> <label for="h">Before the Body tag or insie the Title tag</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="e" name="option_answer_2" value="Before the HTML tag or Body tag" onclick="validateSelectedOption2(this)"> <label for="e">Before the HTML tag or Body tag</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="f" name="option_answer_2" value="Inside the Head tag or Body tag" onclick="validateSelectedOption2(this)"> <label for="f">Inside the Head tag or Body tag</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="g" name="option_answer_2" value="After the closing HTML tag or Body tag" onclick="validateSelectedOption2(this)"> <label for="g">After the closing HTML tag or Body tag</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="h" name="option_answer_2" value="Before the Body tag or insie the Title tag" onclick="validateSelectedOption2(this)"> <label for="h">Before the Body tag or insie the Title tag</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -113,14 +114,15 @@
 
                 <div class="row" id="row_3" style="display: none;">
                     <div class="col-md-12">
+                        <!-- <p>Scores: <span id="scorecounter">0</span>/5<p> -->
                         <ul class="list-group" id="question_3">
-                            <li class="list-group-item active">Question 3: Whtarethe three core languages in web pages?</li>
+                            <li class="list-group-item active">Question 3: What are the three core languages in web pages?</li>
                         </ul>
                         <ul class="list-group" id="question_options_3">
-                            <li class="list-group-item"><input type="radio" id="i" name="option_answer_3" value="CSS" onclick="validateSelectedOption3(this)"> <label for="i">HTML, CSS, Javascript</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="j" name="option_answer_3" value="Javascript" onclick="validateSelectedOption3(this)">  <label for="j">HTML, Javascript, PHP</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="k" name="option_answer_3" value="PHP" onclick="validateSelectedOption3(this)"> <label for="k">Javscript, PHP, PYTHON</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="l" name="option_answer_3" value="Nodejs" onclick="validateSelectedOption3(this)"> <label for="l">CSS, Javasript, Nodejs</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="i" name="option_answer_3" value="HTML, CSS, Javascript" onclick="validateSelectedOption3(this)"> <label for="i">HTML, CSS, Javascript</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="j" name="option_answer_3" value="HTML, Javascript, PHP" onclick="validateSelectedOption3(this)">  <label for="j">HTML, Javascript, PHP</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="k" name="option_answer_3" value="Javascript, PHP, Python" onclick="validateSelectedOption3(this)"> <label for="k">Javascript, PHP, Python</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="l" name="option_answer_3" value="CSS, Javasript, Nodejs" onclick="validateSelectedOption3(this)"> <label for="l">CSS, Javasript, Nodejs</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -152,6 +154,7 @@
 
                 <div class="row" id="row_5" style="display: none;">
                     <div class="col-md-12">
+                        <!-- <p>Scores: <span id="scorecounter">0</span>/5<p> -->
                         <ul class="list-group" id="question_5">
                             <li class="list-group-item active">Question 5: Which element/feature is not new in HTML5?</li>
                         </ul>
@@ -184,7 +187,7 @@
 
         <footer id="footer">
             <div id="record" >
-            <p class="text-center">Copy right protected &copy; 2020</p>   
+            <!-- <p class="text-center">Copy right protected &copy; 2020</p>    -->
         </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -354,7 +357,7 @@
 
                 if(element.value == 'Inside the Head tag or Body tag'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
-                }else if(element.value != 'Buhari'){
+                }else if(element.value != 'Inside the Head tag or Body tag'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
                 }
             }
@@ -367,7 +370,7 @@
 
                 if(element.value == 'HTML, CSS, Javascript'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
-                }else if(element.value != 'Volin'){
+                }else if(element.value != 'HTML, CSS, Javascript'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
                 }
             }
@@ -380,7 +383,7 @@
 
                 if(element.value == 'To let the webpage fully load in the browser window'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
-                }else if(element.value != 'Benny'){
+                }else if(element.value != 'To let the webpage fully load in the browser window'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
                 }
             }
