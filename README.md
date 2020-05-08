@@ -1,2 +1,2 @@
 # quiz-game
- rsponsive quiz game
+ responsive quiz game
