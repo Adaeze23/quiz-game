@@ -31,7 +31,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Scores: <span id="score_counter">0</span>/5</a>
+                        <!-- <a class="nav-link" href="#">Scores: <span id="score_counter">0</span>/5</a> -->
                     </li>
                 </ul>
             </nav>        
@@ -69,18 +69,19 @@
             </div>
         </section> -->
 
-        <section id="questions">
-            <div class="container">
+        <section id="questions" >
+            <div class="container align-content-center">
                 <div class="row" id="row_1" style="display: none;">
                     <div class="col-md-12">
+                            <p>Scores: <span id="scorecounter">0</span>/5<p>
                         <ul class="list-group" id="question_1">
-                            <li class="list-group-item active">Who is president of United State?</li>
+                            <li class="list-group-item active">Question 1: What tag contains the Javascipt code?</li>
                         </ul>
-                        <ul class="list-group" id="question_options_1" >
-                            <li class="list-group-item"><input type="radio" id="a" name="option_answer_1" value="Benny" onclick="validateSelectedOption(this)"> <label for="a">Benny</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="b" name="option_answer_1" value="James" onclick="validateSelectedOption(this)"> <label for="b">James</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="c" name="option_answer_1" value="Volin" onclick="validateSelectedOption(this)"><label for="c">Volin</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="d" name="option_answer_1" value="Trump" onclick="validateSelectedOption(this)"><label for="d">Trump</label> <div class="check"></div></li>
+                        <ul class="list-group" id="question_options_1">
+                            <li class="list-group-item"><input type="radio" id="a" name="option_answer_1" value="Script" onclick="validateSelectedOption(this)"> <label for="a">Script</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="b" name="option_answer_1" value="Code" onclick="validateSelectedOption(this)"> <label for="b">Code</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="c" name="option_answer_1" value="Body" onclick="validateSelectedOption(this)"><label for="c">Body</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="d" name="option_answer_1" value="Style" onclick="validateSelectedOption(this)"><label for="d">Style</label> <div class="check"></div></li>
                         </ul>
 
                         <br />
@@ -92,14 +93,15 @@
 
                 <div class="row" id="row_2" style="display: none;">
                     <div class="col-md-12">
+                        Scores: <span id="score_counter">0</span>/5
                         <ul class="list-group" id="question_2">
-                            <li class="list-group-item active">Who is the president of Nigeria?</li>
+                            <li class="list-group-item active">Question 2: Where is the script tag typically placed ?</li>
                         </ul>
                         <ul class="list-group" id="question_options_2">
-                            <li class="list-group-item"><input type="radio" id="e" name="option_answer_2" value="Buhari" onclick="validateSelectedOption2(this)"> <label for="e">Buhari</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="f" name="option_answer_2" value="Obasanjo" onclick="validateSelectedOption2(this)"> <label for="f">Obasanjo</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="g" name="option_answer_2" value="Volin" onclick="validateSelectedOption2(this)"> <label for="g">Volin</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="h" name="option_answer_2" value="Trump" onclick="validateSelectedOption2(this)"> <label for="h">Trump</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="e" name="option_answer_2" value="HTMLtag" onclick="validateSelectedOption2(this)"> <label for="e">Before the HTML tag or Body tag</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="f" name="option_answer_2" value="HEADtag" onclick="validateSelectedOption2(this)"> <label for="f">Inside the Head tag or Body tag</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="g" name="option_answer_2" value="closingHtml" onclick="validateSelectedOption2(this)"> <label for="g">After the closing HTML tag or Body tag</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="h" name="option_answer_2" value="Titletag" onclick="validateSelectedOption2(this)"> <label for="h">Before the Body tag or insie the Title tag</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -112,18 +114,18 @@
                 <div class="row" id="row_3" style="display: none;">
                     <div class="col-md-12">
                         <ul class="list-group" id="question_3">
-                            <li class="list-group-item active">What is the full meaning of COVID-19?</li>
+                            <li class="list-group-item active">Question 3: Whtarethe three core languages in web pages?</li>
                         </ul>
                         <ul class="list-group" id="question_options_3">
-                            <li class="list-group-item"><input type="radio" id="i" name="option_answer_3" value="Benny" onclick="validateSelectedOption3(this)"> <label for="i">Benny</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="j" name="option_answer_3" value="James" onclick="validateSelectedOption3(this)">  <label for="j">James</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="k" name="option_answer_3" value="Volin" onclick="validateSelectedOption3(this)"> <label for="k">Volin</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="l" name="option_answer_3" value="Trump" onclick="validateSelectedOption3(this)"> <label for="l">Trump</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="i" name="option_answer_3" value="CSS" onclick="validateSelectedOption3(this)"> <label for="i">HTML, CSS, Javascript</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="j" name="option_answer_3" value="Javascript" onclick="validateSelectedOption3(this)">  <label for="j">HTML, Javascript, PHP</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="k" name="option_answer_3" value="PHP" onclick="validateSelectedOption3(this)"> <label for="k">Javscript, PHP, PYTHON</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="l" name="option_answer_3" value="Nodejs" onclick="validateSelectedOption3(this)"> <label for="l">CSS, Javasript, Nodejs</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
 
-                        <button class="btn btn-primary" onclick="nextQuestion(3,4)">Next</button>
+                        <button class="btn btn-primary" onclick="nextQuestion(3,4)" >Next</button>
 
                     </div>
                 </div>
@@ -131,13 +133,13 @@
                 <div class="row" id="row_4" style="display: none;">
                     <div class="col-md-12">
                         <ul class="list-group" id="question_4">
-                            <li class="list-group-item active">What is the full meaning of HTML?</li>
+                            <li class="list-group-item active">Why is the Javascript code being placed just before the closing body tag?</li>
                         </ul>
                         <ul class="list-group" id="question_options_4">
-                            <li class="list-group-item"><input type="radio" id="m" name="option_answer_4" value="Benny" onclick="validateSelectedOption4(this)"> <label for="m">Benny</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="n" name="option_answer_4" value="James" onclick="validateSelectedOption4(this)"> <label for="n">James</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="o" name="option_answer_4" value="Volin" onclick="validateSelectedOption4(this)"> <label for="o">Volin</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="p" name="option_answer_4" value="Trump" onclick="validateSelectedOption4(this)"> <label for="p">Trump</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="m" name="option_answer_4" value="Standards" onclick="validateSelectedOption4(this)"> <label for="m">To comply with Standards</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="n" name="option_answer_4" value="Possible" onclick="validateSelectedOption4(this)"> <label for="n">Thats the only possible way</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="o" name="option_answer_4" value="Browser" onclick="validateSelectedOption4(this)"> <label for="o">To let the webpage fully load in the browser window</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="p" name="option_answer_4" value="Effect" onclick="validateSelectedOption4(this)"> <label for="p">To add more effect to the page</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -151,13 +153,13 @@
                 <div class="row" id="row_5" style="display: none;">
                     <div class="col-md-12">
                         <ul class="list-group" id="question_5">
-                            <li class="list-group-item active">Who is the capital of Lagos?</li>
+                            <li class="list-group-item active">Question 5: Which element/feature is not new in HTML5?</li>
                         </ul>
                         <ul class="list-group" id="question_options_5">
-                            <li class="list-group-item"><input type="radio" id="q" name="option_answer_5" value="Benny" onclick="validateSelectedOption5(this)"> <label for="q">Benny</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="r" name="option_answer_5" value="James" onclick="validateSelectedOption5(this)"> <label for="r">James</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="s" name="option_answer_5" value="Volin" onclick="validateSelectedOption5(this)"><label for="s">Volin</label> <div class="check"></div></li>
-                            <li class="list-group-item"><input type="radio" id="t" name="option_answer_5" value="Trump" onclick="validateSelectedOption5(this)"> <label for="t">Trump</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="q" name="option_answer_5" value="Image" onclick="validateSelectedOption5(this)"> <label for="q">Image</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="r" name="option_answer_5" value="Drag" onclick="validateSelectedOption5(this)"> <label for="r">Drag and Drop</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="s" name="option_answer_5" value="Audio" onclick="validateSelectedOption5(this)"><label for="s">Audio and Video elements</label> <div class="check"></div></li>
+                            <li class="list-group-item"><input type="radio" id="t" name="option_answer_5" value="Geolocation" onclick="validateSelectedOption5(this)"> <label for="t">Geolocation</label> <div class="check"></div></li>
                         </ul>
 
                          <br />
@@ -180,8 +182,8 @@
         </section>
         
 
-        <footer>
-            <div id="record">
+        <footer id="footer">
+            <div id="record" >
             <p class="text-center">Copy right protected &copy; 2020</p>   
         </footer>
         <!-- Optional JavaScript -->
@@ -205,9 +207,6 @@
                 if (prev == 1) {
                     markQuestion1();
                     
-
-
-
                 }
 
                 if (prev == 2) {
@@ -242,7 +241,7 @@
             function markQuestion1(){
                 
                 // ans
-                var answer_1 = "Trump";
+                var answer_1 = "Script";
                 var user_answer_1 = $("input[name=option_answer_1]:checked").val();
 
                 console.log(user_answer_1);
@@ -259,7 +258,7 @@
 
             function markQuestion2(){
 
-                var answer_2 = "Buhari";
+                var answer_2 = "Inside the Head tag or Body tag";
                 var user_answer_2 = $("input[name=option_answer_2]:checked").val();
 
                 console.log(user_answer_2);
@@ -278,7 +277,7 @@
 
             function markQuestion3(){
 
-                var answer_3 = "Volin";
+                var answer_3 = "HTML, CSS, Javascript";
                 var user_answer_3 = $("input[name=option_answer_3]:checked").val();
                 console.log(user_answer_3);
 
@@ -295,7 +294,7 @@
 
             function markQuestion4(){
 
-                var answer_4 = "Benny";
+                var answer_4 = "To let the webpage fully load in the browser window";
                 var user_answer_4 = $("input[name=option_answer_4]:checked").val();
 
                 console.log(user_answer_4);
@@ -315,7 +314,7 @@
      
             function markQuestion5(){
 
-                var answer_5 = "James";
+                var answer_5 = "Image";
                 var user_answer_5 = $("input[name=option_answer_5]:checked").val();
                 console.log(user_answer_5);
 
@@ -338,7 +337,8 @@
                 $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
                 $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
 
-                if(element.value == 'Trump'){
+
+                if(element.value == 'Script'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
                 }else if(element.value != 'Trump'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
@@ -352,7 +352,7 @@
                 $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
                 $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
 
-                if(element.value == 'Buhari'){
+                if(element.value == 'Inside the Head tag or Body tag'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
                 }else if(element.value != 'Buhari'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
@@ -365,7 +365,7 @@
                 $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
                 $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
 
-                if(element.value == 'Volin'){
+                if(element.value == 'HTML, CSS, Javascript'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
                 }else if(element.value != 'Volin'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
@@ -378,7 +378,7 @@
                 $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
                 $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
 
-                if(element.value == 'Benny'){
+                if(element.value == 'To let the webpage fully load in the browser window'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
                 }else if(element.value != 'Benny'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
@@ -391,9 +391,9 @@
                 $(`input[name=${element.name}]`).parent().removeClass('correct-answer');
                 $(`input[name=${element.name}]`).parent().removeClass('wrong-answer');
 
-                if(element.value == 'James'){
+                if(element.value == 'Image'){
                     $(`#${element.id}`).parent().addClass('correct-answer');
-                }else if(element.value != 'James'){
+                }else if(element.value != 'Image'){
                     $(`#${element.id}`).parent().addClass('wrong-answer');
                 }
             }
