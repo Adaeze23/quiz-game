@@ -27,7 +27,7 @@ ul li{
 }
 
 .correct-answer{
-	color: #ffffff;
+	color: #0DFF92;
 	background-color: #0DFF92;
 
 	/*display: block;
@@ -95,15 +95,15 @@ ul li:hover label{
 	margin: auto;
 	transition: background 0.25s linear;
 	-webkit-transition: background 0.25s linear;
-    color: #ffffff;
+    /*color: #ffffff;*/
 	}
 
 	input[type=radio]:checked ~ .check {
-	border: 5px solid #ffffff;
+	/*border: 5px solid #ffffff;*/
 	}
 
 	input[type=radio]:checked ~ .check::before{
-	background: #ffffff;
+	/*background: #ffffff;*/
 	}
 
 	input[type=radio]:checked ~ label{
@@ -179,7 +179,7 @@ ul li:hover label{
     position: relative;
     display: block;
     padding: 1rem;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border: 1px solid rgba(0,0,0,.125);
 }
 
